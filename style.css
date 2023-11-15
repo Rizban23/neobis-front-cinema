@@ -6,12 +6,13 @@
 
 body{
     background-color: #1a191f;
-    font-family: "opens sans";
+    font-family: "Roboto", sans-serif;;
 }
 
 .container{
     max-width: 1200px;
     margin: 0 auto;
+    top:120px
 }
 .haeader__content{
     display: flex;
@@ -25,30 +26,45 @@ body{
     font-size: 32px;
     text-decoration: none;
     color: #ffffff;
-
+}
+.category{
+        width: 20%;
+        display: flex;
+        flex-direction:column ;
 }
 
 .header__releases{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-evenly;
     padding: 0.5em;
+    
 }
-.header__releases-list{
+.nav-list{
     list-style: none;
-    padding: 0 0.5em;
+    /* padding: 0 0.5em; */
+    margin-top: 20px;
+    list-style: none;
+    line-height: 2;
+    font-size: 20px;
      
 }
 
-.header__releases-list a{
+.nav-list a{
     text-decoration: none;
+    position: relative;
     color:#fff ; 
 }
+.nav-list a:after{
+    content: "";
+    position: absolute;
+    background-color: #ff3c78;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
 
-.header__releases-list a:hover{
-    color: #ffffff; 
-    transition: 0.25s ease-in-out;
+.nav-list a:hover:after{
+    width: 100%;
 }
 
 .header__content{
@@ -68,25 +84,27 @@ body{
     padding: 10px;
     border: 2px solid #1a191f;
     outline: none;
-}
-
-
- 
+} 
  
 .movies{
+    margin-top: -370px;
+    width: 80%;
+    float: right;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-top:30px ;
 }
 .movie{
-    width: 240px;
+    width: 280px;
     margin: 10px;
     position: relative;
 }
 .movie__cover-inner{
     position: relative;
     height: 360px;
+}
+.movie__cover-inner img{
+    width: 280px;
 }
 .movie__cover{
     max-width: 100%;
@@ -100,6 +118,7 @@ body{
     left: 0;
     right: 0;
     max-width: 100%;
+    width: 100%;
     height: 100%;
     z-index: 1;
 }
@@ -110,6 +129,11 @@ body{
 
 .movie__info{
     padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.movie-content{
+    width: px;
 }
 
 .movie__title{
@@ -122,8 +146,10 @@ body{
 }
 
 .movie__category{
-    font-size: 14px;
+    font-size: 10px;
     color: #ffd80e;
+    
+    
 }
 
 .movie__average{
@@ -154,4 +180,16 @@ body{
 
 .movie__average-red{
     border: 1px solid red;
+}
+.movie_content-favorite {
+    display: flex;
+    top: -20px;
+    float: right;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    fill: red;
+}
+.movie_content-favorite img{
+    width: 30px;
 }

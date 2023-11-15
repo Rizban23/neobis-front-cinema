@@ -5,19 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cinema</title>
     <link rel="stylesheet" href="./style.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 </head>
 <body>
     <header class="header">
         <div class="container">
                 <div class="haeader__content">
-        
-                <a href="./index.html" class="header__logo">Movie<b>App</b></a>   
-                <ul class="header__releases">
-                    <li class="header__releases-list"><a href="./releasesofthecurrentmonth.html"><b>Релизы текущего месяца</b></a></li>
-                    <li  class="header__releases-list"><a href="./upcomingfilms.html"><b>Ожидаемые фильмы</b></a></li>
-                    <li  class="header__releases-list"><a href="./Premieresofthemonth.html"><b>Премьеры месяца</b></a></li>
-                    <li  class="header__releases-list"><a href="./favorite.html"><b>Избранные</b></a></li>
-                </ul>
+          <a href="./index.html" class="header__logo">Movie<b>App</b></a>   
         <form>
             <input type="text" class="header__search" placeholder="Поиск" />
         </form>
@@ -25,11 +23,22 @@
     </div>
    
     </header>
-    <div class="container">
+    
+        <div class="container">
+            <div class="category">
+            <ul class="header__releases">
+                <li class="nav-list" id="premiereMovies"> <a href="#"><b>Премьеры текущего месяца</b></a></li>
+                <li  class="nav-list" id="anticipatedMovies"><a href="#"><b>Ожидаемые фильмы</b></a></li>
+                <li  class="nav-list"  id="popularMovies"><a href="#"><b>Топ лучших фильмов</b></a></li>
+                <li  class="nav-list"id="realesesMonthMovies" ><a href="#"><b>Цифровые релизы текущего месяца</b></a></li>
+                <li  class="nav-list" id="favoriteMovies"><a href="#"><b>Избранные</b></a></li>
+            </ul>
+        </div>
+
         <div class="movies">
-        
         </div>
     </div>
+    
 
     
 
